@@ -16,4 +16,4 @@ App de Lucas para cargar los productos mientras hace la compra (precio, cantidad
 - Textos de la interfaz y mensajes de commit en español rioplatense.
 
 ## Publicación
-GitHub Pages: Settings → Pages → Deploy from a branch → `main`, carpeta `/ (root)`. Queda en `https://ginzaacademia-prog.github.io/ir-al-super/`. Con el repo privado, Pages puede requerir un plan pago de GitHub.
+Automática con GitHub Actions (`.github/workflows/pages.yml`): cada push a `main` publica la app. Para actualizarla alcanza con commitear y pushear a `main` (subiendo la versión de `CACHE`). En Settings → Pages la fuente tiene que estar en **GitHub Actions** (se configura una sola vez). Si agregás archivos nuevos a la app, sumalos al paso de copia del workflow y a `ASSETS` en `sw.js`. Queda en `https://ginzaacademia-prog.github.io/ir-al-super/`. Con el repo privado, Pages puede requerir un plan pago de GitHub.

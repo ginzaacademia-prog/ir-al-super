@@ -39,7 +39,7 @@ Es una web app instalable (PWA): se abre desde el navegador, se agrega a la pant
 - Exportar e importar una copia (con fotos), borrar todo
 
 ## Publicarla
-En GitHub: **Settings → Pages → Deploy from a branch**, rama `main` y carpeta `/ (root)`. Queda en `https://<usuario>.github.io/<repo>/`.
+Se publica sola con GitHub Actions (`.github/workflows/pages.yml`) cada vez que se sube algo a `main`. La primera vez hay que ir a **Settings → Pages → Build and deployment → Source** y elegir **GitHub Actions**. Queda en `https://ginzaacademia-prog.github.io/ir-al-super/`.
 
 ## Archivos
 - `index.html`: la estructura de la app
